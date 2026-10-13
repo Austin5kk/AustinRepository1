@@ -1,0 +1,22 @@
+id,test,expected,actual,pass_fail,evidence,run_by
+A1,Next moves forward,nextIndex(0,3)=1,PASS,PASS,node tests.js output,TODO confirm you ran it
+A2,Next wraps last to first,nextIndex(2,3)=0,PASS,PASS,node tests.js output,TODO confirm you ran it
+A3,Previous wraps first to last,prevIndex(0,3)=2,PASS,PASS,node tests.js output,TODO confirm you ran it
+A4,Empty list does not crash,returns 0,PASS,PASS,node tests.js output,TODO confirm you ran it
+A5,Complete record is usable,no problems,PASS,PASS,node tests.js output,TODO confirm you ran it
+A6,Missing longitude flagged,message mentions longitude,PASS,PASS,node tests.js output,TODO confirm you ran it
+A7,Longitude 200 out of range,problem list not empty,PASS,PASS,node tests.js output,TODO confirm you ran it
+A8,Swapped lon/lat caught,message mentions swapped,PASS,PASS,node tests.js output,TODO confirm you ran it
+A9,Missing source flagged,message mentions source,PASS,PASS,node tests.js output,TODO confirm you ran it
+A10,Photo without alt flagged,message mentions alt,PASS,PASS,node tests.js output,TODO confirm you ran it
+A11,usable() drops bad records only,1 of 2 kept,PASS,PASS,node tests.js output,TODO confirm you ran it
+A12,bounds() contains every stop,all 5 inside box,PASS,PASS,node tests.js output,TODO confirm you ran it
+A13,bounds() of empty list,null,PASS,PASS,node tests.js output,TODO confirm you ran it
+A14,Tour has five stops,length 5,PASS,PASS,node tests.js output,TODO confirm you ran it
+A15,Mont-Saint-Michel longitude negative,lon < 0,PASS,PASS,node tests.js output,TODO confirm you ran it
+A16,Every places.js record usable,no problems,PASS,PASS,node tests.js output,TODO confirm you ran it
+M1,"Browser: index.html shows 5 stops, no 'Needs verification' box",5 stops,NOT RUN,,TODO screenshot,
+M2,"Browser: Show all stops button frames all 5 markers",all markers visible,NOT RUN,,TODO screenshot,
+M3,"Browser: tests.html shows all PASS",16 PASS,NOT RUN,,TODO screenshot,
+M4-M6,TODO your remaining manual checks from Canvas page 05,,NOT RUN,,,
+R1,Break-and-repair exercise (missing-data record),TODO,NOT RUN,,TODO,
